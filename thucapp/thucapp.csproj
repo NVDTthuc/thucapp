@@ -1,6 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-thucapp-5349AE55-98B6-48B1-B801-92EB216DF087</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
@@ -12,5 +12,12 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\thucapp.Application\thucapp.Application.csproj" />
+    <ProjectReference Include="..\thucapp.Data.EF\thucapp.Data.EF.csproj" />
+    <ProjectReference Include="..\thucapp.Data\thucapp.Data.csproj" />
+    <ProjectReference Include="..\thucapp.Infrastructure\thucapp.Infrastructure.csproj" />
+    <ProjectReference Include="..\thucapp.Utilities\thucapp.Utilities.csproj" />
   </ItemGroup>
 </Project>
